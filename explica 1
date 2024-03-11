@@ -1,0 +1,38 @@
+O programa consiste em um jogo de padrões, onde uma matriz 4x4 é preenchida com números de 1 a 4, seguindo um padrão específico. Os dois arquivos fornecidos são o "main.c" e "mostra_padrao.c".
+Vamos explicar cada um deles de forma simplificada:
+
+main.c
+Inclusão de Bibliotecas:
+
+#include <unistd.h>: Para usar a função write que escreve no console.
+#include <stdlib.h>: Para utilizar a função malloc e exit.
+#include <string.h>: Para usar a função strcmp.
+Definição de Funções:
+
+alocar_matriz: Aloca dinamicamente uma matriz de inteiros de tamanho especificado.
+preencher_matriz: Preenche a matriz com valores de uma matriz fixa chamada "numeros".
+mostrar_matriz: Gera uma matriz padrão 4x4 com números de 1 a 4 em um padrão específico.
+main: Função principal do programa.
+Implementação do Main:
+
+Aloca uma matriz 4x4 usando a função alocar_matriz.
+Preenche a matriz usando a função preencher_matriz.
+Verifica a entrada do programa. Se a entrada não for válida, exibe "Error" e retorna 1.
+Chama a função mostra_padrao para mostrar a matriz gerada.
+Libera a memória alocada.
+mostra_padrao.c
+Inclusão de Bibliotecas:
+
+#include <unistd.h>: Para usar a função write que escreve no console.
+Definição de Funções:
+
+mostra_padrao: Exibe a matriz passada como argumento no console.
+Implementação da Função mostra_padrao:
+
+Converte cada número da matriz em um caractere e o escreve no console.
+Adiciona um espaço entre os números, exceto para o último número de cada linha.
+Adiciona uma quebra de linha ao final de cada linha.
+Sobre o Programa:
+O programa gera uma matriz 4x4 com números de 1 a 4 seguindo um padrão específico. 
+A entrada do programa é verificada, e se não estiver correta, é exibido um erro. Em seguida, a matriz gerada é exibida no console utilizando a função mostra_padrao.
+O objetivo específico do jogo ou aplicação não está explicitamente indicado nos códigos fornecidos.
